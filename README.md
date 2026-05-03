@@ -47,7 +47,7 @@ Create new offers (packages) tied to a hotel, destination, and guides.
 </p>
 
 ### Account management
-Update personal info (name, email, phone, password).
+See personal info (name, email, phone), and log out.
 
 <p align="center">
   <img src="docs/screenshots/manage-account.jpeg" alt="Manage account" width="700"/>
