@@ -19,20 +19,20 @@ I built it as a personal project to develop my Java skills, but it also doubled 
 Login and registration with role-based access (`CLIENT` / `BUSINESS`).
 
 <p align="center">
-  <img src="docs/screenshots/login.jpg" alt="Login screen" width="700"/>
+  <img src="docs/screenshots/login.jpeg" alt="Login screen" width="700"/>
 </p>
 <p align="center">
-  <img src="docs/screenshots/register.jpg" alt="Register screen" width="700"/>
+  <img src="docs/screenshots/register.jpeg" alt="Register screen" width="700"/>
 </p>
 
 ### Client dashboard
 Browse touristic packages, view package details, and make reservations.
 
 <p align="center">
-  <img src="docs/screenshots/client-dashboard.jpg" alt="Client dashboard" width="700"/>
+  <img src="docs/screenshots/client-dashboard.jpeg" alt="Client dashboard" width="700"/>
 </p>
 <p align="center">
-  <img src="docs/screenshots/package-details.jpg" alt="Package details" width="700"/>
+  <img src="docs/screenshots/package-details.jpeg" alt="Package details" width="700"/>
 </p>
 
 ### Business dashboard
@@ -50,14 +50,14 @@ Create new offers (packages) tied to a hotel, destination, and guides.
 Update personal info (name, email, phone, password).
 
 <p align="center">
-  <img src="docs/screenshots/manage-account.jpg" alt="Manage account" width="700"/>
+  <img src="docs/screenshots/manage-account.jpeg" alt="Manage account" width="700"/>
 </p>
 
 ### Reservations
 Book a package for one or more people and see reservation history.
 
 <p align="center">
-  <img src="docs/screenshots/reservation.jpg" alt="Reservation screen" width="700"/>
+  <img src="docs/screenshots/reservation.jpeg" alt="Reservation screen" width="700"/>
 </p>
 
 ### PDF invoices
