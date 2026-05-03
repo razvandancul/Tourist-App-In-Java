@@ -1,30 +1,67 @@
-### Package Based Tourist Application
-## Description off application
-We ususally want to get the best possbile offers when we want to go in a vacation, or sometimes we are just tight on money, and we start looking for some vacation pacakges. This projects represents a full Java desktop application for managing a travel agency: clients can browse and book touristic pacakges and business users can create new offers and manage hotels, destinations, and guides. Reservations generate a styled PDF invoice automatically.\
-I created it more as a personal project, to develop my Java comprehension, but It was also part of a optional project for the Object-Oriented Programming lab in university, and the database part was also a project for the Database lab.
+# Package-Based Tourist Application
+
+## Description
+
+We usually want the best possible offers when going on vacation, or sometimes we're just tight on money and start hunting for travel packages. This project is a full Java desktop application for managing a travel agency: clients can browse and book touristic packages, and business users can create new offers and manage hotels, destinations, and guides. Reservations generate a styled PDF invoice automatically.
+
+I built it as a personal project to develop my Java skills, but it also doubled as an optional project for the Object-Oriented Programming lab at university, and the database side covered a project for the Database lab.
 
 ## Technologies used
-• **Language**: Java
 
-• **UI**: Java Swing + FlatLaf (with MacDark theme)
+- **Language:** Java
+- **UI:** Java Swing + FlatLaf (Mac Dark theme)
+- **Database:** PostgreSQL
+- **PDF:** OpenPDF
 
-• **Database**: PostgreSQL
+## Features
 
-• **PDF**: OpenPDF
+### Authentication
+Login and registration with role-based access (`CLIENT` / `BUSINESS`).
 
+<p align="center">
+  <img src="docs/screenshots/login.jpg" alt="Login screen" width="700"/>
+</p>
+<p align="center">
+  <img src="docs/screenshots/register.jpg" alt="Register screen" width="700"/>
+</p>
 
-## Features off aplication
-• **Authentication** — login and registration with role-based access (`CLIENT` / `BUSINESS`)
+### Client dashboard
+Browse touristic packages, view package details, and make reservations.
 
-• **Client dashboard** — browse touristic packages, view package details, make reservations
+<p align="center">
+  <img src="docs/screenshots/client-dashboard.jpg" alt="Client dashboard" width="700"/>
+</p>
+<p align="center">
+  <img src="docs/screenshots/package-details.jpg" alt="Package details" width="700"/>
+</p>
 
-• **Business dashboard** — create new offers (packages) tied to a hotel, destination, and guides
+### Business dashboard
+Create new offers (packages) tied to a hotel, destination, and guides.
 
-• **Account management** — update personal info (name, email, phone, password)
+<p align="center">
+  <img src="docs/screenshots/create-offer.jpg" alt="Create new offer" width="700"/>
+</p>
 
-• **Reservations** — book a package for one or more people, see reservation history
+### Account management
+Update personal info (name, email, phone, password).
 
-• **PDF invoices** — every reservation produces an `Invoice_FV<series>.pdf` (OpenPDF), opened automatically after generation
+<p align="center">
+  <img src="docs/screenshots/manage-account.jpg" alt="Manage account" width="700"/>
+</p>
+
+### Reservations
+Book a package for one or more people and see reservation history.
+
+<p align="center">
+  <img src="docs/screenshots/reservation.jpg" alt="Reservation screen" width="700"/>
+</p>
+
+### PDF invoices
+Every reservation produces an `Invoice_FV<series>.pdf` (OpenPDF) that opens automatically after generation.
+
+<p align="center">
+  <img src="docs/screenshots/invoice.jpg" alt="Generated PDF invoice" width="700"/>
+</p>
 
 ## Database
 
@@ -65,8 +102,8 @@ The schema lives in [`database.sql`](database.sql). Tables (Romanian names):
 
 ## Roles
 
-• **CLIENT** — default role on registration. Sees the client dashboard, can browse packages and book.
-• **BUSINESS** — agency staff. Can create new offers (packages) and manage catalog data.
+- **CLIENT** — default role on registration. Sees the client dashboard, can browse packages and book.
+- **BUSINESS** — agency staff. Can create new offers (packages) and manage catalog data.
 
 The role check lives in `Client.isBusiness()` and gates the business-only dashboards.
 
@@ -75,4 +112,5 @@ The role check lives in `Client.isBusiness()` and gates the business-only dashbo
 After a reservation is confirmed, `BillGenerator.generateBill(...)` writes an A4 PDF named `Invoice_FV<series>.pdf` to the project root and opens it with the system's default PDF viewer. A few sample invoices are checked in (`Invoice_FV1029.pdf` … `Invoice_FV1033.pdf`).
 
 ## Known issues
-• Guide assignment to a new pacakage is currently missing
+
+- Guide assignment to a new package is currently missing.
