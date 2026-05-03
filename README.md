@@ -39,6 +39,10 @@ Browse touristic packages, view package details, and make reservations.
 Create new offers (packages) tied to a hotel, destination, and guides.
 
 <p align="center">
+  <img src="docs/screenshots/create-offer-button.jpg" alt="Create new offer button" width="700"/>
+</p>
+
+<p align="center">
   <img src="docs/screenshots/create-offer.jpg" alt="Create new offer" width="700"/>
 </p>
 
